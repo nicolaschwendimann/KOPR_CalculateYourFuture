@@ -1,0 +1,22 @@
+/*!=========================================================*
+* Head Developer:   Nicola Schwendimann
+* Co-Developer:     Severin Renold
+* University:       FHGR
+* Modul:            Konzeption & Prototyping
+=============================================================*/
+
+/*===========================================================
+ Common CSS
+============================================================*/
+
+body {
+    font-size: 13px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #000;
+    background: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
