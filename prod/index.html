@@ -22,9 +22,13 @@
      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
 
      <!-- CSS Links -->
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="assets/css/bootstrap.css">
      <link rel="stylesheet" href="assets/css/plugins.min.css">
      <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Custom styles for Navigation Area -->
+    <link href="carousel.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -37,8 +41,7 @@
     <meta name="theme-color" content="#f01616">
 
 
-    <!-- Custom styles for Navigation Area -->
-    <link href="carousel.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -81,7 +84,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><img src="assets/img/slider/slider-1.jpg" rect width="100%" height="auto" fill="#777"/></svg>
+        <img src="assets/img/slider/slider-1.jpg" rect width="100%" height="auto" fill="#777"/>
         <div class="container">
           <div class="carousel-caption text-center">
             <h1>CALCULATE YOUR FUTURE</h1>
@@ -91,7 +94,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><img src="assets/img/slider/slider-2.jpg" rect width="100%" height="auto" fill="#777"/></svg>
+        <img src="assets/img/slider/slider-2.jpg" rect width="100%" height="auto" fill="#777"/>
         <div class="container">
           <div class="carousel-caption text-center">
             <h1>CALCULATE YOUR FUTURE</h1>
@@ -101,7 +104,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><img src="assets/img/slider/slider-3.jpg" rect width="100%" height="auto" fill="#777"/></svg>
+        <img src="assets/img/slider/slider-3.jpg" rect width="100%" height="auto" fill="#777"/>
         <div class="container">
           <div class="carousel-caption text-center">
             <h1>CALCULATE YOUR FUTURE</h1>
@@ -122,59 +125,78 @@
   </div>
 
 
-  <!-- Marketing messaging and featurettes
+  <!-- Information and Marketing Content Area
   ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
+  <!-- rest of the page in another container to center all the content. -->
 
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      <div class="col-lg-12 text-center">
+        <h5>Bei Calculate My Future erhalten Sie die nötige Sicherheit die benötigt wird, in der Zukunftsplanung mit Kindern. 
+          Vergewissern Sie sich über Ihre finanziellen Ressourcen und deren Entwicklung in den kommenden Jahren. 
+          Erhalten Sie Überblick über Kosten und Variablen in der Familienplanung und konsultieren Sie wenn nötig weitere Hilfe 
+          oder beantragen Sie finanzielle Unterstützung. </h5>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/circles/future-mother.png" width="250px" height="auto">
+        <h2>Für werdende Eltern</h2>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/circles/familie.png" width="250px" height="auto">
+        <h2>Für Eltern</h2>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      <div class="col-lg-4 text-center">
+        <img src="assets/img/circles/kinder.png" width="250px" height="auto">
+        <h2>Für Kinder</h2>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
 
-    <!-- START THE FEATURETTES -->
+  
+ <!--  How it works Area
+  ================================================== -->
+  <!-- add a Youtube Video as iFrame into the Page to bring some visual tutorial content. -->
 
     <hr class="featurette-divider">
 
     <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="col-md-12 text-center">
+        <h2 class="featurette-heading">Wie funktionierts?</h2>
       </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      <div class="col-md-12 video-container text-center"> 
+        <iframe id="ytplayer" type="text/html" width="360" height="202.5" src="https://www.youtube.com/embed/Px8S2SJfTbU?loop=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
+ <!--  How it works Area
+  ================================================== -->
+  <!-- visualise the calcualation process in an easy way for new customer. -->
+  
     <hr class="featurette-divider">
+    <h2 class="featurette-heading text-center">Der Prozess</h2>
+    
+    <div class="row featurette text-center justify-content-center">
+      <div class="col-md-12 btn-secondary border">
+        <h4>In nur vier Schritten zur personalisierten und ausführlichen Kostenberechnung.</h4>
+      </div>
 
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <div class="col-md-2 btn-info border">
+        <h4 class="featurette-heading">-1- <br>Account erstellen</h4>
       </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      <div class="col-md-2 btn-info border">
+        <h4 class="featurette-heading">-2- <br>Fragen beantworten</h4>
       </div>
+      <div class="col-md-2 btn-info border">
+        <h4 class="featurette-heading">-3- <br>Auswertung erhalten</h4>
+      </div>
+      <div class="col-md-2 btn-info border">
+        <h4 class="featurette-heading">-4- <br>Fertig</h4>
+      </div>
+      <div class="col-md-2 btn-light border">
+        <h4 class="featurette-heading">Optional</h4><h6>weitere Beratung konsultieren<br><br><br></h6>
+      </div> 
     </div>
 
     <hr class="featurette-divider">
