@@ -68,8 +68,8 @@
    </button>
    <div class="collapse navbar-collapse" id="navbarCollapse">
      <ul class="navbar-nav mr-auto">
-       <li class="nav-item active">
-         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+       <li class="nav-item">
+         <a class="nav-link" href="index.html">Home</a>
        </li>
        <li class="nav-item">
          <a class="nav-link" href="kalkulator.html">Kalkulator</a>
@@ -81,9 +81,8 @@
            <a class="nav-link" href="index.html#kontakt">Kontakt</a>
          </li>
      </ul>
-     <form class="form-inline mt-1 mt-md-0">
+     <form class="form-inline mt-2 mt-md-0">
        <input class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Search">
-       <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a class="nav-item text-info" href="signup.html">Registrieren</a></button>
        <button class="btn btn-outline-light my-2 my-sm-0" type="submit"><a class="nav-item text-info" href="signin.html">Login</a></button>
      </form>
    </div>
@@ -93,26 +92,33 @@
 
 <body class="text-center">
 
-    <form class="form-signin">
+    <form class="form-signin" id="usr-psswd">
         <img class="mb-4" src="assets/img/favicons/favicon-150x150.png" alt="" width="100" height="100">
-        <h1 class="h3 mb-3 font-weight-normal">bitte anmelden</h1>
-        <label for="inputEmail" class="sr-only">E-Mail Adresse</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" required autofocus>
-        <label for="inputPassword" class="sr-only">Kennwort</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Kennwort" required>
+        <h1 class="h3 mb-3 font-weight-normal">Registrierung</h1>
+        <div class="form-group form-row">
+          <label for="inputFirstName" class="sr-only">Vorname</label>
+          <input type="text" class="form-control" placeholder="Vorname" required autofocus>
+          <label for="inputLastName" class="sr-only">Nachname</label>
+          <input type="text" class="form-control" placeholder="Nachname" required>
+          <label for="inputZip" class="sr-only">PLZ</label>
+          <input type="text" class="form-control" placeholder="PLZ" required autofocus>
+        </div>
+          <label for="inputEmail" class="sr-only">E-Mail Adresse</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" required autofocus>
+          <label for="inputPassword" class="sr-only">Kennwort</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Kennwort" required>
+          <label for="inputPassword2" class="sr-only">Kennwort bestätigen</label>
+          <input type="password" id="inputPassword2" class="form-control" placeholder="Kennwort bestätigen" required>
+        </div>
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"> Angemeldet bleiben
+            <input type="checkbox" value="remember-me"> Newsletter abonnieren
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
-
-        <input type="button" class="btn btn-lg btn-primary btn-block" value="Anmelden" onclick="location.href = 'kalkulatorPrivate.html';">
-
-        <p class="mt-5 mb-3 text-muted">Sie haben noch keinen Account?</p>
-        <button class="btn btn-outline-secondary bg-light my-2 my-sm-0" type="submit"><a class="nav-item text-secondary" href="signup.html">Registrieren</a></button>
+        <input type="button" class="btn btn-lg btn-primary btn-block" onclick="submission()" value="Registration absenden">
+        <p class="mt-5 mb-3 text-muted">Sie haben bereits einen Account?</p>
+        <button class="btn btn-outline-secondary bg-light my-2 my-sm-0" type="submit"><a class="nav-item text-secondary" href="signup.html">Anmelden</a></button>
       </form>
-
 
 
 
@@ -121,6 +127,7 @@
     <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/loginChecker.js"></script>
 
 </body>
 </html>

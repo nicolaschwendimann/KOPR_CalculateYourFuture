@@ -97,22 +97,37 @@
         <img class="mb-4" src="assets/img/favicons/favicon-150x150.png" alt="" width="100" height="100">
         <h1 class="h3 mb-3 font-weight-normal">bitte anmelden</h1>
         <label for="inputEmail" class="sr-only">E-Mail Adresse</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" required autofocus>
+        <input type="email" name="email" class="form-control" placeholder="E-Mail Adresse" required autofocus>
         <label for="inputPassword" class="sr-only">Kennwort</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Kennwort" required>
+        <input type="text" name="kennwort" class="form-control" placeholder="Kennwort" required><br>
         <div class="checkbox mb-3">
           <label>
-            <input type="checkbox" value="remember-me"> Angemeldet bleiben
+            <input type="checkbox" value="remember-me"> Angemeldet bleiben 
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
-
-        <input type="button" class="btn btn-lg btn-primary btn-block" value="Anmelden" onclick="location.href = 'kalkulatorPrivate.html';">
+        <input type="button" class="btn btn-lg btn-primary btn-block" value="Anmelden" onClick="Login(this.form);">
 
         <p class="mt-5 mb-3 text-muted">Sie haben noch keinen Account?</p>
         <button class="btn btn-outline-secondary bg-light my-2 my-sm-0" type="submit"><a class="nav-item text-secondary" href="signup.html">Registrieren</a></button>
       </form>
-
+      <form class="form-singin">
+        <table align=center>
+          <tr>
+             <td>Username:</td>
+             <td></td>
+          </tr>
+        
+          <tr>
+             <td>Password:</td>
+             <td><input type="password" name="password" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';" onBlur="this.style.background = '#bfbfbf';"></td>
+          </tr>
+        
+          <tr>
+          <td></td>
+          <td align=right><input type="button" value="Login" onClick="Login(this.form);" style="background:#bfbfbf;color:#000000;border-color:#212121;" onMouseOver="this.style.color = '#404040';" onMouseOut="this.style.color = '#000000';" onFocusr="this.style.color = '#404040';" onBlur="this.style.color = '#000000';"></td>
+          </tr>
+        </table>
+        </form>
 
 
 
