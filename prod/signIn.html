@@ -60,6 +60,9 @@
 
   </head>
 
+  <!-- Header Area
+  ================================================== -->
+  <!-- contains NavBar, Search Area, SignIn and SignUp buttons. -->
   <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
    <a class="navbar-brand" href="#">Calculate Your Future</a>
@@ -90,24 +93,26 @@
  </nav>
 </header>
 
-
+  <!-- Body Area
+  ================================================== -->
+  <!-- contains SignIn form and SignUp forwarding. -->
 <body class="text-center">
 
-    <form class="form-signin">
+    <form class="form-signin" name="myForm" action="kalkulatorPrivate.html" onsubmit="validateForm()" method="POST">
         <img class="mb-4" src="assets/img/favicons/favicon-150x150.png" alt="" width="100" height="100">
         <h1 class="h3 mb-3 font-weight-normal">bitte anmelden</h1>
         <label for="inputEmail" class="sr-only">E-Mail Adresse</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="E-Mail Adresse" required autofocus>
+        <input type="email" name="email" id="inputEmailJS" class="form-control" placeholder="E-Mail Adresse" required autofocus>
         <label for="inputPassword" class="sr-only">Kennwort</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Kennwort" required>
+        Kennwort:<input type="password" name="password" id="inputPasswordJS" class="form-control" required>
         <div class="checkbox mb-3">
           <label>
             <input type="checkbox" value="remember-me"> Angemeldet bleiben
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Anmelden</button>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Prüfen</button>
 
-        <input type="button" class="btn btn-lg btn-primary btn-block" value="Anmelden" onclick="location.href = 'kalkulatorPrivate.html';">
+        <button class="btn btn-outline-secondary bg-light my-2 my-sm-0" type="submit">Anmelden</button>
 
         <p class="mt-5 mb-3 text-muted">Sie haben noch keinen Account?</p>
         <button class="btn btn-outline-secondary bg-light my-2 my-sm-0" type="submit"><a class="nav-item text-secondary" href="signup.html">Registrieren</a></button>
@@ -121,6 +126,9 @@
     <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- LoginChecker with forwarding functionality for "kalkulationPrivate.html" Area-->
+    <script src="assets/js/loginChecker.js"></script>
 
 </body>
 </html>
