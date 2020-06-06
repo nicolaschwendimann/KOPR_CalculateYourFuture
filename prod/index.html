@@ -43,9 +43,13 @@
 
 
   </head>
-  <body>
-    <header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<body>
+  
+  <!-- Header Area
+  ================================================== -->
+  <!-- contains NavBar, Search Area, SignIn and SignUp buttons. -->
+  <header>
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">Calculate Your Future</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -67,15 +71,17 @@
       </ul>
       <form class="form-inline mt-2 mt-md-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suche</button>
+        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><a class="nav-item text-secondary" href="signup.html">Registrieren</a></button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-item text-secondary" href="signin.html">Login</a></button>
       </form>
     </div>
   </nav>
 </header>
 
-<!-- Carousel Area -->
+<!-- Main Content Area-->
 <main role="main">
 
+<!-- Carousel Area -->
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -89,7 +95,7 @@
           <div class="carousel-caption text-center">
             <h1>CALCULATE YOUR FUTURE</h1>
             <p>Wir unterstützen Sie bei der sicheren Zukunftsplanung.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Jetzt registrieren</a></p>
+            <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Jetzt registrieren</a></p>
           </div>
         </div>
       </div>
@@ -99,7 +105,7 @@
           <div class="carousel-caption text-center">
             <h1>CALCULATE YOUR FUTURE</h1>
             <p>Wir unterstützen Sie bei der sicheren Zukunftsplanung.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Erfahre mehr</a></p>
+            <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Erfahre mehr</a></p>
           </div>
         </div>
       </div>
@@ -109,7 +115,7 @@
           <div class="carousel-caption text-center">
             <h1>CALCULATE YOUR FUTURE</h1>
             <p>Wir unterstützen Sie bei der sicheren Zukunftsplanung.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Beratungsstellen</a></p>
+            <p><a class="btn btn-lg btn-primary" href="beratung.html" role="button">Beratungsstellen</a></p>
           </div>
         </div>
       </div>
@@ -211,17 +217,17 @@
         <h4>Sehen Sie hier eine Übersicht aller Partner von Calculate Your Future, welche Ihnen für weitere Fragen oder Beratungen zu spezifischen Themen zur Verfügung stehen.</h4><br><br>
       </div>
 
-      <div class="col-md-3 rounded btn-secondary border">
-        <h4>KESB<br></h4>
+      <div button class="col-md-3 rounded btn-secondary border">
+        <h4><a class="text-center text-light" href="https://www.gr.ch/DE/institutionen/verwaltung/djsg/kesb/organisation/standorteundadressen/Nordbuenden/Seiten/Info.aspx">KESB<br></a></h4>
       </div>
       <div class="col-md-3 rounded btn-secondary border">
-        <h4>SHMK<br></h4>
+        <h4><a class="text-center text-light" href="https://shmk.ch">SHMK<br></a></h4>
       </div>
       <div class="col-md-3 rounded btn-secondary border">
-        <h4>B&S<br></h4>
+        <h4><a class="text-center text-light" href="https://shmk.ch">B&S<br></a></h4>
       </div>
       <div class="col-md-3 rounded btn-secondary border">
-        <h4>Pro Juventute<br></h4>
+        <h4><a class="text-center text-light" href="https://www.projuventute.ch/de/eltern">SHMK<br></a></h4>
       </div>
   </div>
 
@@ -353,11 +359,11 @@
 </main>
 
 
-    <!-- Modernize JS -->
-    <script src="assets/js/modernizr-2.8.3.min.js"></script>
-    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Modernize JS -->
+  <script src="assets/js/modernizr-2.8.3.min.js"></script>
+  <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
