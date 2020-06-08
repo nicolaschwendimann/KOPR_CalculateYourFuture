@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Create Your Future</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="page-topic" content="Hilfestellung, Beratung und Kommunikation, Kalkulation, Kinder, Eltern, Beratungsstellen">
+    <meta name="publisher" content="N. Schwendimann">
+    <meta name="publisher uri" content="https://www.nicolaschwendimann.ch">
+    <meta name="developer" content="N. Schwendimann, S. Renold">
+    <meta name="University" content="Fachhochschule Graubünden">
+    <meta name="Modul" content="Konzeption & Prototyping">
+    <meta name="Semester" content="Semester 06 (FS20)">
+    <meta name="Studiengang" content="BSc with Major in Digital Business Management">
+    <meta name="version" content="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- navbar edge compiler-->
+
+
+     <!-- Font 
+     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet"> -->
+
+     <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="assets/css/bootstrap.css">
+     <link rel="stylesheet" href="assets/css/plugins.min.css">
+     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Custom styles for Navigation Area -->
+    <link rel="stylesheet" href="carusel.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#f01616">
+    <link rel="icon" href="assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f01616">
+  </head>
+
+<body class="bg-white">
+
+    <!-- Navigation, Search Area, SignIn and SignUp buttons-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Calculate Your Future</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kalkulator.html">Kalkulator</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="beratung.html">Beratung & Hilfe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#kontakt">Kontakt <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-2" type="search" placeholder="Suche" aria-label="Search">
+            <a class="btn btn-outline-light btn-sm mr-2" href="login.html">Suchen</a>
+            <a class="btn btn-primary btn-sm mr-2" href="signup.html">Registrieren</a>
+            <a class="btn btn-warning btn-sm" href="signin.html">Login</a>
+         </form>
+    </div>
+</nav> 
+    
+    <!-- Contact form -->
+    <div class="container mt-5">
+        <div class="row">
+        <div class="col-12 col-lg-8">
+            <h2 class="text-center">Kontakt</h2>
+         </div>
+    </div> <!-- title --> 
+        <form>
+     <div class="form-row mt-3">
+      <div class="form-group col-md-6 col-lg-4">
+        <label for="inputFirstName4">Vorname</label>
+        <input type="text" class="form-control" id="inputFirstName4">
+      </div>
+      <div class="form-group col-md-6 col-lg-4">
+        <label for="inputLastName4">Nachname</label>
+        <input type="text" class="form-control" id="inputLastName4">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 col-lg-4">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="form-group col-md-6 col-lg-4">
+          <label for="inputPhone">Tel.</label>
+          <input type="phone" class="form-control" id="inputPhone">
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-lg-8">
+      <label for="inputAddress">Strasse und Hausnummer</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Strasse und Hausnummer">
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6 col-lg-4">
+        <label for="inputCity">Ort</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="form-group col-md-2 col-lg-1">
+        <label for="inputPLZ">PLZ</label>
+        <input type="text" class="form-control" id="inputPLZ">
+      </div>
+      <!-- Dropdown for Cantons alphabetic sorted-->
+      <div class="form-group col-md-4 col-lg-3">     
+        <label for="inputState">Kanton</label>
+        <select id="inputState" class="form-control">
+          <option selected>wählen...</option>
+          <option>Aargau</option>
+          <option>Appenzell Ausserrhoden</option>
+          <option>Appenzell Innerrhoden</option>
+          <option>Basel-Stadt</option>
+          <option>Basel-Landschaft</option>
+          <option>Bern</option>
+          <option>Freiburg</option>
+          <option>Genf</option>
+          <option>Glarus</option>
+          <option>Graubünden</option>
+          <option>Jura</option>
+          <option>Luzern</option>
+          <option>Neuenburg</option>
+          <option>Nidwalden</option>
+          <option>Obwalden</option>
+          <option>Schaffhausen</option>
+          <option>Schwyz</option>
+          <option>St. Gallen</option>
+          <option>Solothurn</option>
+          <option>Tessin</option>
+          <option>Thurgau</option>
+          <option>Uri</option>
+          <option>Waadt</option>
+          <option>Wallis</option>
+          <option>Zug</option>
+          <option>Zürich</option>
+        </select>
+      </div>
+    </div>
+        <!-- checkout container-->
+        <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Newsletter abonnieren
+        </label>
+      </div>
+    </div>
+    </form> <!-- form -->
+        <div class="row">
+        <div class="col-12 col-lg-8">
+            <button type="submit" class="btn btn-primary">Absenden</button>
+         </div>
+    </div> <!-- Senden button -->
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-12 text-center">
+            <p>&copy; 2020 Calculate Your Future &middot; <a href="#">Datenschutz</a> &middot; <a href="#">Impressum</a></p>
+        </div>
+    </div>    
+        
+        
+   </div> <!-- container -->
+    
+    <!-- Footer -->
+
+
+    <!-- Modernize JS -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
